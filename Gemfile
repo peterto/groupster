@@ -9,16 +9,14 @@ gem 'sqlite3'
 gem 'omniauth-facebook'
 gem 'devise'
 gem 'activeadmin'
-
- gem 'activeadmin'
- gem "meta_search",    '>= 1.1.0.pre'
+gem "meta_search",    '>= 1.1.0.pre'
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
   gem 'sass-rails',   '~> 3.2.0'
-  gem 'coffee-rails', '~> 3.2.0'
-
+  # gem 'coffee-rails', '~> 3.2.0'
+  # gem 'twitter-bootstrap-rails'
   gem 'uglifier', '>= 1.0.3'
 end
 
@@ -40,4 +38,3 @@ gem 'jquery-rails'
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
 gem 'wicked'
-gem 'bootstrap-sass'
