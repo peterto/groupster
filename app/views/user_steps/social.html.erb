@@ -1,0 +1,11 @@
+Social
+<%= form_for(@user, :url => wizard_path, :method => :put) do |f| %>
+  
+  <%= f.text_field :facebook, :placeholder => 'facebook'%>
+  <%= f.text_field :twitter, :placeholder => '@twitter'%>
+  <%= f.submit 'Next', :class => 'btn btn-primary' %>
+  
+<% end %>
+
+
+<%= link_to 'skip', next_wizard_path %>
