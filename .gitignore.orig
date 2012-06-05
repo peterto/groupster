@@ -13,4 +13,9 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+<<<<<<< HEAD
+
+# Ignore Omniauth.rb
+=======
+>>>>>>> 0c0046f4c501af379c7473dadf68e646369291b8
 /config/initializers/omniauth.rb
