@@ -1,15 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Groupster</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
 
-Home Page
-Hello, <%= @user.username %>
+<div>
+  Username: <%= @user.username %>
+</div>
+<div>
+  Zip: <%= @user.zip %>
+</div>
+<div>
+  Twitter: <%= link_to @user.twitter, 'http://twitter.com/' + @user.twitter %>
+</div>
+<div>
+  Facebook: <%= link_to @user.facebook, 'http://facebook.com/' + @user.facebook %>
+</div>
+
+<div>
 <%- if current_user.blank? -%>
   <%= link_to 'sign up', new_user_registration_path  %>
   or
@@ -17,5 +20,5 @@ Hello, <%= @user.username %>
 <%- else -%>
   You're signed in! To sign out go to <%= link_to 'sign out', destroy_user_session_path, :method => :delete %>
 <%- end -%>
-</body>
-</html>
+</div>
+
