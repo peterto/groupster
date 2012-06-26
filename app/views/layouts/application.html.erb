@@ -26,9 +26,16 @@
           </div>
         </div>
       </div>
+    
   <div class="container">
     <div class="hero-unit">
-    <%= yield %>
+      <div class="span6">
+        <img src= <%= asset_path 'Holding-hands.jpg' %> height="400" width="800" />
+
+      </div>
+      <div class="span4">
+        <%= yield %>
+      </div>
     </div>
   </div>
 
